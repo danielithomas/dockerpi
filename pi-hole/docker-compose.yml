@@ -13,7 +13,7 @@ services:
       - "443:443/tcp"
     environment:
       TZ: ${PI_HOLE_TZ}
-      WEBPASSWORD: ${PI_HOLE_ADMIN}
+      WEBPASSWORD: ${PI_HOLE_PWD}
     # Volumes store your data between container upgrades
     volumes:
       - './etc-pihole/:/etc/pihole/'
