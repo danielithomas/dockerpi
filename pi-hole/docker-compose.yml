@@ -14,6 +14,7 @@ services:
     environment:
       TZ: ${PI_HOLE_TZ}
       WEBPASSWORD: ${PI_HOLE_PWD}
+      ServerIP: ${HOST_SERVER_IP}
     # Volumes store your data between container upgrades
     volumes:
       - './etc-pihole/:/etc/pihole/'
